@@ -65,7 +65,7 @@ public interface Logger extends System.Logger {
      * @param msg the string message (or a key in the message catalog, if
      * this logger is a {@link
      * System.LoggerFinder#getLocalizedLogger(String,
-     * java.util.ResourceBundle, java.lang.Module) localized logger});
+     * java.util.ResourceBundle, Module) localized logger});
      * can be {@code null}.
      */
     public default void log(String msg) {
@@ -109,7 +109,7 @@ public interface Logger extends System.Logger {
      * @param msg the string message (or a key in the message catalog, if
      * this logger is a {@link
      * System.LoggerFinder#getLocalizedLogger(String,
-     * java.util.ResourceBundle, java.lang.Module) localized logger});
+     * java.util.ResourceBundle, Module) localized logger});
      * can be {@code null}.
      * @param thrown a {@code Throwable} associated with the log message;
      *        can be {@code null}.
@@ -145,7 +145,7 @@ public interface Logger extends System.Logger {
      * java.text.MessageFormat} format, (or a key in the message
      * catalog, if this logger is a {@link
      * System.LoggerFinder#getLocalizedLogger(String,
-     * java.util.ResourceBundle, java.lang.Module) localized logger});
+     * java.util.ResourceBundle, Module) localized logger});
      * can be {@code null}.
      * @param params an optional list of parameters to the message (may be
      * none).

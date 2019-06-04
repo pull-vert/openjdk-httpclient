@@ -187,12 +187,12 @@ public abstract class HttpRequest {
          * Sets a timeout for this request. If the response is not received
          * within the specified timeout then an {@link HttpTimeoutException} is
          * thrown from {@link HttpClient#send(HttpRequest,
-         * java.net.http.HttpResponse.BodyHandler) HttpClient::send} or
+         * HttpResponse.BodyHandler) HttpClient::send} or
          * {@link HttpClient#sendAsync(HttpRequest,
-         * java.net.http.HttpResponse.BodyHandler) HttpClient::sendAsync}
+         * HttpResponse.BodyHandler) HttpClient::sendAsync}
          * completes exceptionally with an {@code HttpTimeoutException}. The effect
-         * of not setting a timeout is the same as setting an infinite Duration, ie.
-         * block forever.
+         * of not setting a timeout is the same as setting an infinite Duration,
+         * i.e. block forever.
          *
          * @param duration the timeout duration
          * @return this builder
